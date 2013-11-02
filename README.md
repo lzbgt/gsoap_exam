@@ -1,9 +1,11 @@
 Test gsoap
 
 build by:
+
 Make all
 
 or Steps:
+
 Generate files by
 
 \# soapcpp2 calc.h
