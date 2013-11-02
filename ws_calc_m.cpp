@@ -1,7 +1,7 @@
 #include "soapH.h" /* get the gSOAP-generated definitions */
 #include "calc.nsmap" /* get the gSOAP-generated namespace bindings */
 #include <math.h>  
-#include < pthread.h > 
+#include <pthread.h> 
 #define BACKLOG (100) // Max. request backlog 
 
 int main(int argc, char **argv) 
@@ -42,7 +42,7 @@ int main(int argc, char **argv)
             fprintf(stderr, "server timed out\n"); 
             break; 
          } 
-         fprintf(stderr, "Thread %d accepts socket %d connection from IP %d.%d.%d.%d\n", i, s, (soap.ip >> 24)&0xFF, (soap.ip >> 16)&0xFF, (soap.ip >> 8)&0xFF, soap.ip&0xFF); 
+         fprintf(stderr, "Thread %lu accepts socket %d connection from IP %d.%d.%d.%d\n", pthread_self(), s, (soap.ip >> 24)&0xFF, (soap.ip >> 16)&0xFF, (soap.ip >> 8)&0xFF, soap.ip&0xFF); 
          tsoap = soap_copy(&soap); // make a safe copy 
          if (!tsoap) 
             break; 
