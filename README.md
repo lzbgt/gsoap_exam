@@ -1,4 +1,4 @@
-Test pr
+Test gsoap
 
 build by:
 Make all
