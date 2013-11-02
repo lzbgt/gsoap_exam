@@ -6,9 +6,8 @@
   xmlns:xsd="http://www.w3.org/2001/XMLSchema"
   xmlns:ns="urn:calc">
  <SOAP-ENV:Body>
-  <ns:add>
+  <ns:sqrt>
    <a>0.0</a>
-   <b>0.0</b>
-  </ns:add>
+  </ns:sqrt>
  </SOAP-ENV:Body>
 </SOAP-ENV:Envelope>
