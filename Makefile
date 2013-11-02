@@ -27,6 +27,4 @@ soapcpp2:
 	soapcpp2 calc.h
 
 gitpush:
-	git add .
-	git commit -m"new"
-	git push
+	git status; git add . ;git commit -m"new"; git push
