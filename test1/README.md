@@ -1,9 +1,9 @@
 Test gsoap
 
-build by:
---  # make clean
---  # make all
+build by:<br>
+<pre># make clean </pre>
+<pre># make all</pre>
 
 run:
--- # sudo ./ws_calc 8088
+<pre> # sudo ./ws_calc 8088</pre>
 
